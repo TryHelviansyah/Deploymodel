@@ -1,0 +1,28 @@
+{
+  "name": "batikmodel",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:dev": "nodemon ./src/server/server.js",
+    "start": "export TF_CPP_MIN_LOG_LEVEL=3 && export TF_DISABLE_AVX512=1 && export TF_ENABLE_ONEDNN_OPTS=0 && node src/server/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@google-cloud/firestore": "^7.10.0",
+    "@google-cloud/storage": "^7.14.0",
+    "@hapi/hapi": "^21.3.12",
+    "@tensorflow/tfjs-node": "^4.22.0",
+    "canvas": "^2.11.2",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "multer": "^1.4.5-lts.1",
+    "sharp": "^0.33.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  }
+}
